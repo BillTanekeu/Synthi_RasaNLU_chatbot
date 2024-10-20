@@ -1,0 +1,60 @@
+version: "3.1"
+nlu:
+- intent: saluer
+  examples: |
+    - Bonjour
+    - Salut
+    - Hey
+    - Bonsoir
+    - Coucou
+
+- intent: demander_recommandation_projet
+  examples: |
+    - Pouvez-vous me recommander un projet ?
+    - Quel projet devrais-je faire ensuite ?
+    - Je cherche une idée de projet
+    - Suggérez-moi un projet intéressant
+    - Quels sont les projets populaires en ce moment ?
+
+- intent: demander_info_projet
+  examples: |
+    - Dites-moi en plus sur le projet [développement web](nom_projet)
+    - Quelles sont les compétences requises pour [l'apprentissage automatique](nom_projet) ?
+    - Combien de temps prend généralement le projet [application mobile](nom_projet) ?
+    - Quel est le niveau de difficulté du projet [analyse de données](nom_projet) ?
+    - Pouvez-vous me donner des détails sur le projet [intelligence artificielle](nom_projet) ?
+
+- intent: poser_question_generale
+  examples: |
+    - Comment puis-je améliorer mes compétences en programmation ?
+    - Quelles sont les meilleures ressources pour apprendre [Python](langage) ?
+    - Pouvez-vous m'expliquer ce qu'est [l'apprentissage profond](concept) ?
+    - Où puis-je trouver des exercices de pratique pour [JavaScript](langage) ?
+    - Quels sont les prérequis pour apprendre [la science des données](domaine) ?
+
+- intent: demander_aide
+  examples: |
+    - J'ai besoin d'aide avec mon projet
+    - Je suis bloqué sur un problème
+    - Pouvez-vous m'aider à déboguer mon code ?
+    - Je ne comprends pas cette erreur
+    - Comment puis-je résoudre ce problème ?
+
+- intent: remercier
+  examples: |
+    - Merci
+    - Merci beaucoup
+    - C'est très utile
+    - Je vous remercie
+    - Parfait, merci
+
+- intent: au_revoir
+  examples: |
+    - Au revoir
+    - À bientôt
+    - Bonne journée
+    - Salut
+    - Merci, au revoir
+
+
+## Actions personnalisées (à implémenter)

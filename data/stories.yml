@@ -1,0 +1,33 @@
+version: "3.1"
+stories:
+
+- story: Recommandation de projet
+  steps:
+    - intent: saluer
+    - action: utter_saluer
+    - intent: demander_recommandation_projet
+    - action: action_recommander_projet
+    - intent: demander_info_projet
+    - action: action_donner_info_projet
+    - intent: remercier
+    - action: utter_de_rien
+
+- story: Question générale
+  steps:
+    - intent: saluer
+    - action: utter_saluer
+    - intent: poser_question_generale
+    - action: action_repondre_question_generale
+    - intent: remercier
+    - action: utter_de_rien
+    - intent: au_revoir
+    - action: utter_au_revoir
+
+- story: Demande d'aide
+  steps:
+    - intent: demander_aide
+    - action: utter_demander_plus_info
+    - intent: poser_question_generale
+    - action: action_repondre_question_generale
+    - intent: remercier
+    - action: utter_de_rien

@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - demander_recommandation_projet
+  - demander_info_projet
+  - poser_question_generale
+  - demander_aide
+  - remercier
+  - au_revoir
+
+
+entities:
+  - nom_projet
+  - langage
+  - concept
+  - domaine
+
+
+actions:
+  - action_recommander_projet
+  - action_donner_info_projet
+  - action_repondre_question_generale
+
+  
+responses:
+  utter_saluer:
+    - text: "Bonjour ! Comment puis-je vous aider aujourd'hui ?"
+
+  utter_demander_plus_info:
+    - text: "Je serai ravi de vous aider. Pouvez-vous me donner plus de détails sur votre problème ?"
+
+  utter_de_rien:
+    - text: "Je vous en prie. N'hésitez pas si vous avez d'autres questions !"
+
+  utter_au_revoir:
+    - text: "Au revoir ! Bonne continuation dans votre apprentissage."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
